@@ -1,0 +1,19 @@
+<div class="container">
+<h2>Employee List </h2>
+
+<table class='table' *ngIf="employeeInfo && employeeInfo.length">
+<tr>
+<th>EmployeeId</th>
+<th>EmployeeName</th>
+<th>ProjectId</th>
+<th>ProjectName</th>
+</tr>
+
+<tr *ngFor="let item of employeeInfo">
+<td>{{item.employeeId}}</td>
+<td>{{item.employeeName}}</td>
+<td>{{item.projectId}}</td>
+<td>{{item.projectName}}</td>
+</tr>
+</table>
+</div>
